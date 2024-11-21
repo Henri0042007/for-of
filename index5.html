@@ -7,10 +7,21 @@
 
     //ENTRADA
     let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
-    let posicao = 
+    let vogal = [];
 
     //PROCESSAMENTO
+    for (let item of listaDeNomes) {
+        let inicio = item[0];
+        if (inicio == "A" || inicio == "E" || inicio == "I" || inicio == "O" || inicio == "U") {
+            vogal.push(item)
+        } else {
+
+        }
+    }
 
     //SAÍDA
+    document.write(`nomes ${listaDeNomes.join(", ")} <br>
+    nomes que começão com vogal: ${vogal.join(", ")} <br>
+    nomes em ordem alfabeticas: ${listaDeNomes.sort().join(", ")}`)
 
 </script>
