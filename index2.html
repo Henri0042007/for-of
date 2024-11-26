@@ -11,8 +11,19 @@
     let femi = []
 
     //PROCESSAMENTO
+    for (let sexo of lista){
+        const genero = prompt(`Qual é o genero de ${sexo}, escreva M para masculino e F para feminino`).toUpperCase();
+        if (genero == "M") {
+            masc.push(sexo)
+        } else if (genero == "F") {
+            femi.push(sexo)
+        } else {
+            alert(`${genero} Não e uma alternativa`)
+        }
+    }
 
     
     //SAÍDA
+    document.write(`Masculino : ${masc} <br> Feminino : ${femi}`)
 
 </script>
